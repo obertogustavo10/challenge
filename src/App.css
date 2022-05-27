@@ -1,31 +1,367 @@
-.App {
+/*################
+      Colors
+################## */
+:root {
+  --background-main-black: #000000;
+  --main-black-grey: #333;
+  --main-black-light: #202020;
+  --main-green-flow: #2bcc9c;
+  --main-white-light: #fff;
+}
+/*################
+      Home
+################## */
+.app {
+  background-color: var(--background-main-black);
+  color: #fff;
+}
+
+.banner {margin-top: 50px;}
+
+.banner__img {
+  border-radius: 20px;
+  border: 1px solid #2bcc9c;
+}
+.banner__paragraph--container{
+  text-align: center;
+}
+.banner__paragraph {
+  text-align: center;
+  text-justify: justify;
+  font-size: 25px;
+  margin-top: 50px;
+  font-family: "Pulso", sans-serif;
+  letter-spacing: 0.38px;
+}
+.banner__paragraph--span {
+  color: #2bcc9c;
+}
+.banner__paragraph--flow {
+  width: 60px;
+  height: 60px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title__secundary{
+  text-align: center; 
+  margin-top: 100px;
+  margin-bottom: 50px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.title__secundary--h2 {
+  text-align: center;
+  font-size: 32px;
+  font-family: "Pulso", sans-serif;
+  letter-spacing: 0.38px;
+}
+
+.personal {
+  background-image: url(./img/banner1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 25px;
+}
+.personal__container{text-align: center;}
+
+.personal__container--title {
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.personal__container--paragraph {
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.personal__container--button {
+  background-color: #21dbaa;
+  border: none;
+  color: #121212;
+}
+.personal__container--button:hover {
+  background-color: #fff;
+  border: solid 1px #000000;
+  color: #21dbaa;
+}
+
+
+.oferta {
+  text-align: center;
+  margin-top: 100px;
+}
+.oferta__card {
+  margin-bottom: 50px;
+}
+.oferta__card--header {
+  background-color: #202020;
+  margin-top: -3%;
+  padding: 20px;
+}
+.oferta__card--span{
+  color: #21dbaa;
+}
+.oferta__card--sub{
+  font-size: 10px;
+}
+.oferta__card--body{
+  text-align: left;
+  padding-left: 40px;
+}
+.oferta__card--icon {
+  color: #2bcc9c;
+  margin-right: 20px;
+}
+.oferta__card--div{text-align: center;}
+
+.responsive__app--container{
+  text-align: center;
+}
+.responsive__app--title{
+  margin: bottom 20px;
+}
+.responsive__app--span{
+  color: #2bcc9c;
+}
+.responsive__app--logos {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.responsive__app--logo--tv {
+  text-align: center;
+  line-height: 1;
+  color: #fff;
+  background: url(./img/tv.svg) no-repeat;
+  padding: 16px 28px;
+  margin-left: 17px;
+}
+.responsive__app--logo--pc {
+  text-align: center;
+  line-height: 1;
+  color: #fff;
+  background: url(./img/pc.svg) no-repeat;
+  padding: 10px 22px;
+  margin-left: 17px;
+}
+.responsive__app--logo--tb {
+  text-align: center;
+  line-height: 1;
+  color: #fff;
+  background: url(./img/tablet.svg) no-repeat;
+  padding: 5px 9px;
+  margin-left: 17px;
+}
+.responsive__app--logo--tf {
+  text-align: center;
+  line-height: 1;
+  color: #fff;
+  background: url(./img/smartphone.svg) no-repeat;
+  padding: 0px 7px;
+  margin-left: 17px;
+}
+.responsive__app--button{
+  background-color: #21dbaa;
+  border: none;
+  color: #121212;
+  margin-bottom: 20px;
+}
+.responsive__app--button:hover{
+  background-color: #fff;
+  border: solid 1px #000000;
+  color: #21dbaa;
+}
+
+
+
+
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .personal {
+    background-image: url(./img/bannerMobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-right: 15px;
+    margin-left: 15px;
+    text-align: center;
+  }
+  .title__secundary{
+    text-align: center; 
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .oferta__card--header {
+    background-color: #202020;
+    margin-top: -1%;
+    padding: 20px;
+  }
+}
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 1024px) {
+  .banner__paragraph {
+    text-align: center;
+    text-justify: justify;
+    font-size: 20px;
+    margin-top: 40px;
+    font-family: "Pulso", sans-serif;
+    letter-spacing: 0.38px;
+  }
+}
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+}
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-main {
+  text-align: left;
+}
+.App-logo-spin {
+  width: 100px;
+  text-align: center;
+}
+.image-card {
+  width: 30px;
+}
+.font-color-nav {
+  color: #2bcc9c;
+  font-weight: bold;
+}
+
+.bg-black {
+  background-color: #202020 !important;
+}
+
+.row-search {
+  margin-top: 100px;
+}
+.form-control {
+  border: #2bcc9c 3px solid !important;
+}
+.button-search {
+  color: #2bcc9c;
+}
+.card {
+  text-align: center;
+  background-color: #333;
+  width: 100%;
+  color: #fff;
+  padding: 10px 0 2px 0;
+  border-top: #21dbaa 7px solid;
+}
+.weather-map {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.current-card {
+  background-color: #333;
+  padding: 10px 0 2px 0;
+  border-top: #21dbaa 7px solid;
+}
+.current-card-title {
+  background-color: #191919;
+}
+/*##############
+Main
+###########  */
+
+
+.oferta-card {
+  margin-bottom: 50px;
+}
+.oferta {
+  text-align: center;
+  margin-top: 100px;
+}
+.oferta-card-header {
+  background-color: #202020;
+  margin-top: -3%;
+  padding: 20px;
+}
+.oferta-box-description {
+  background-color: #333;
+}
+.oferta-card-header-sub {
+  font-size: 10px;
+}
+.banner-button {
+  text-align: center !important;
+  background-color: transparent;
+  border: solid 1px #21dbaa;
+  color: #21dbaa;
+  margin-top: 50px;
+}
+.banner-button:hover {
+  background-color: #21dbaa;
+  border: solid 1px #fff;
+  color: #000000;
+}
+.banner-price {
+  font-size: 50px;
+}
+.banner-icon {
+  color: #2bcc9c;
+  margin-right: 20px;
+}
+.banner-icons {
+  background-color: #fff;
+  color: #000000;
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+}
+.lista {
+  margin-bottom: 10px;
+}
+
+
+
+
+.select-weather {
+  border: solid 3px #21dbaa;
+}
+.weather-current {
+  margin-top: 60px;
+  background-color: #333;
+  padding: 10px;
+  border: #21dbaa 2px solid;
+  border-radius: 10px;
+  height: 250px;
+}
+.weather-current-temp {
+  margin-left: 20px;
+}
+.weather-current-title-h1 {
+  font-size: 70px;
+}
+.weather-current-img {
+  text-align: center;
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +372,5 @@
     transform: rotate(360deg);
   }
 }
+
+
