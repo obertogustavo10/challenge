@@ -87,7 +87,6 @@
   color: #21dbaa;
 }
 
-
 .oferta {
   text-align: center;
   margin-top: 100px;
@@ -116,6 +115,9 @@
 }
 .oferta__card--div{text-align: center;}
 
+.responsive__app{
+  margin-top: 15px;
+}
 .responsive__app--container{
   text-align: center;
 }
@@ -173,7 +175,54 @@
   color: #21dbaa;
 }
 
+.select__weather {
+  border: solid 3px #21dbaa;
+}
+.select__weather--option{
+  text-align: center;
+}
 
+.select-weather {
+  border: solid 3px #21dbaa;
+}
+
+.weather__current--container {
+  margin-top: 60px;
+  background-color: #333;
+  padding: 10px;
+  border: #21dbaa 2px solid;
+  border-radius: 10px;
+  height: 250px;
+}
+.weather__current--temp {
+  margin-left: 20px;
+}
+.weather__current--title {
+  font-size: 70px;
+}
+.weather__current--img {
+  text-align: center;
+}
+.weather__current--list{
+  list-style: none;
+  margin-top: 20px;
+}
+.weather__current--icon {
+  background-color: #fff;
+  color: #000000;
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+}
+.weather__current--lista {
+  margin-bottom: 10px;
+}
+
+.pronostico__title--h3{
+  margin-top: 20px;
+}
 
 
 /* // No media query for `xs` since this is the default in Bootstrap */
@@ -327,50 +376,10 @@ Main
   color: #2bcc9c;
   margin-right: 20px;
 }
-.banner-icons {
-  background-color: #fff;
-  color: #000000;
-  margin-right: 20px;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  padding: 8px;
-}
-.lista {
-  margin-bottom: 10px;
-}
 
 
 
 
-.select-weather {
-  border: solid 3px #21dbaa;
-}
-.weather-current {
-  margin-top: 60px;
-  background-color: #333;
-  padding: 10px;
-  border: #21dbaa 2px solid;
-  border-radius: 10px;
-  height: 250px;
-}
-.weather-current-temp {
-  margin-left: 20px;
-}
-.weather-current-title-h1 {
-  font-size: 70px;
-}
-.weather-current-img {
-  text-align: center;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 
