@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
+import { BsHouseDoor} from "react-icons/bs";
 import {Container, Navbar} from 'react-bootstrap';
 import Logo from '../img/logo.svg';
 import '../App.css';
@@ -14,8 +16,9 @@ export default function Navb() {
           height="30"
           className="d-inline-block align-top"
         />{' '}
-      Weather
+      <Link className="font-color-nav" to="/clima">Weather</Link>
       </Navbar.Brand>
+      <Link to="/"className="justify-content-end font-color-nav"><BsHouseDoor/> Home</Link>
     </Container>
   </Navbar>
   )

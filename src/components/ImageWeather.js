@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 import clearIcon from "../img/Clear.png";
 import heavyCloudIcon from "../img/HeavyCloud.png";
 import lightRainIcon from "../img/LightRain.png";
 import thunderstormIcon from "../img/Thunderstorm.png";
 import snowIcon from "../img/Snow.png";
-import FogIcon from '../img/niebla.png';
-import HumedifyIcon from '../img/humedad.png';
-import WindIcon from '../img/wind.png';
+import FogIcon from "../img/niebla.png";
+import HumedifyIcon from "../img/humedad.png";
+import WindIcon from "../img/wind.png";
 
-export default function ImageWeather({status, className}) {
+export default function ImageWeather({ status, className }) {
   let icon;
 
   if (status === "Clear") {
@@ -35,7 +35,7 @@ export default function ImageWeather({status, className}) {
     icon = WindIcon;
   }
 
-  if (status === "Fog") {
+  if (status === "Fog" || status === "Haze" || status === "Mist") {
     icon = FogIcon;
   }
 
@@ -45,5 +45,5 @@ export default function ImageWeather({status, className}) {
 
   return (
     <img className={className} src={icon} alt="icone weather of the day" />
-  )
-};
+  );
+}

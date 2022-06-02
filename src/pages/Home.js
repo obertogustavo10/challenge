@@ -1,28 +1,42 @@
 import React from "react";
-import { Container, Row, Col, Button, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import Navb from "../components/Navb";
 import Banner from "../img/descarga.jpg";
 import Logo from "../img/logo.svg";
-import { BsWifi, BsCast, BsCloudSun } from "react-icons/bs";
 import "../App.css";
+import FlowResponsive from "../components/FlowResponsive";
+import Info from "../card.json";
+import CardOferta from "../components/CardOferta";
+import Image from "../components/Image";
 
 export default function Home() {
+  const data = Info.card;
+
   return (
     <div className="app">
       <Navb />
       <Container>
-
-       {/*Banner*/}
         <Row className="banner">
           <Col xs={12} sm={12} md={12} lg={6} xl={6}>
-            <img className="banner__img img-fluid" src={Banner} alt="granizo" />
+            <Image
+              src={Banner}
+              alt={"granizo"}
+              className={"banner__img img-fluid"}
+            />
           </Col>
-          <Col className="banner__paragraph--container" xs={12} sm={12} md={12} lg={6} xl={6}>
+          <Col
+            className="banner__paragraph--container"
+            xs={12}
+            sm={12}
+            md={12}
+            lg={6}
+            xl={6}
+          >
             <p className="banner__paragraph">
-            
-              Personal Developers trae una propuesta para sus usuarios,
-               se trata de la creación de una aplicación meteorológica
-                con la mayor precisión del mercado.
+              Personal Developers trae una propuesta para sus usuarios, se trata
+              de la creación de una aplicación meteorológica con la mayor
+              precisión del mercado.
               <br />
               Bienvenido a{" "}
               <span className="banner__paragraph--span"> FLOW | WEATHER</span>
@@ -31,7 +45,6 @@ export default function Home() {
           </Col>
         </Row>
 
-        {/*title secundary*/}
         <Row className="title__secundary">
           <Col xs={12} sm={12} md={12} lg={12} xl={12}>
             <h2 className="title__secundary--h2">
@@ -39,8 +52,7 @@ export default function Home() {
             </h2>
           </Col>
         </Row>
-        
-        {/*Personal*/}
+
         <Row className="personal">
           <Col xs={12} sm={12} md={12} lg={8} xl={6}>
             <div className="personal__container">
@@ -53,132 +65,29 @@ export default function Home() {
                 ver. Encontrá todo lo que te gusta y elegí por cuánto tiempo
                 contratarlo
               </p>
-              <Button className="personal__container--button">Activar gratis</Button>
+              <Link to='/clima' ><Button className="personal__container--button" >
+                Abrir AppWeather
+              </Button></Link>
             </div>
           </Col>
         </Row>
 
         <Row className="oferta">
-          <Col xs={12} sm={12} md={12} lg={4} xl={4}>
-            <Card className="oferta__card">
-              <Card.Header className="oferta__card--header">
-                <Card.Title>
-                  <span className="oferta__card--span">Flow</span> App
-                </Card.Title>
-                <Card.Subtitle className="mb-2 text-muted oferta__card--sub">
-                  Acceso a la app con TV en Vivo y los mejores contenidos
-                </Card.Subtitle>
-              </Card.Header>
-              <Card.Body className="oferta__card--body">
-                <Card.Text>
-                  <BsWifi className="oferta__card--icon" />
-                  Sin instalación técnica.
-                </Card.Text>
-                <Card.Text>
-                  <BsCloudSun className="oferta__card--icon" />
-                  Acceso a Flow | Weather.
-                </Card.Text>
-                <Card.Text>
-                  <BsCast className="oferta__card--icon" />
-                  Experiencia digital.
-                </Card.Text>
-                <div className="oferta__card--div">
-                  <Card.Text className="banner-price">$499</Card.Text>
-                </div>
-                <div className="oferta__card--div">
-                  <Button className="banner-button">¡Lo quiero!</Button>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col xs={12} sm={12} md={12} lg={4} xl={4}>
-            <Card className="oferta__card">
-              <Card.Header className="oferta__card--header">
-                <Card.Title>
-                  <span className="oferta__card--span">Flow</span> App
-                </Card.Title>
-                <Card.Subtitle className="mb-2 text-muted oferta__card--sub">
-                  Acceso a la app con TV en Vivo y los mejores contenidos
-                </Card.Subtitle>
-              </Card.Header>
-              <Card.Body className="oferta__card--body">
-                <Card.Text>
-                  <BsWifi className="oferta__card--icon" />
-                  Sin instalación técnica.
-                </Card.Text>
-                <Card.Text>
-                  <BsCloudSun className="oferta__card--icon" />
-                  Acceso a Flow | Weather.
-                </Card.Text>
-                <Card.Text>
-                  <BsCast className="oferta__card--icon" />
-                  Experiencia digital.
-                </Card.Text>
-                <div className="oferta__card--div">
-                  <Card.Text className="banner-price">$499</Card.Text>
-                </div>
-                <div className="oferta__card--div">
-                  <Button className="banner-button">¡Lo quiero!</Button>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col xs={12} sm={12} md={12} lg={4} xl={4}>
-            <Card className="oferta__card">
-              <Card.Header className="oferta__card--header">
-                <Card.Title>
-                  <span className="oferta__card--span">Flow</span> App
-                </Card.Title>
-                <Card.Subtitle className="mb-2 text-muted oferta__card--sub">
-                  Acceso a la app con TV en Vivo y los mejores contenidos
-                </Card.Subtitle>
-              </Card.Header>
-              <Card.Body className="oferta__card--body">
-                <Card.Text>
-                  <BsWifi className="oferta__card--icon" />
-                  Sin instalación técnica.
-                </Card.Text>
-                <Card.Text>
-                  <BsCloudSun className="oferta__card--icon" />
-                  Acceso a Flow | Weather.
-                </Card.Text>
-                <Card.Text>
-                  <BsCast className="oferta__card--icon" />
-                  Experiencia digital.
-                </Card.Text>
-                <div className="oferta__card--div">
-                  <Card.Text className="banner-price">$499</Card.Text>
-                </div>
-                <div className="oferta__card--div">
-                  <Button className="banner-button">¡Lo quiero!</Button>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
+          {data.map((tar, index) => (
+            <Col xs={12} sm={12} md={12} lg={4} xl={4}>
+              <CardOferta
+                key={index}
+                subTitle={tar.subtitle}
+                textWifi={tar.textWifi}
+                textWeather={tar.textWeather}
+                textCast={tar.textCast}
+                precio={tar.precio}
+              />
+            </Col>
+          ))}
         </Row>
 
-        <Row className="responsive__app">
-          <Col xs={12} sm={12} md={12} lg={12} xl={12}>
-            <div className="responsive__app--container">
-              <h3 className="responsive__app--title">
-                Disfruta{" "}
-                <span className="responsive__app--span"> FLOW | WEATHER</span>{" "}
-                desde tu TV, PC, Tablet y Smartphone
-              </h3>
-              <div className="responsive__app--logos">
-                <span>
-                  <i className="responsive__app--logo--tv"></i>
-                  <i className="responsive__app--logo--pc"></i>
-                  <i className="responsive__app--logo--tb"></i>
-                  <i className="responsive__app--logo--tf"></i>
-                </span>
-              </div>
-              <Button className="responsive__app--button">Ver Ahora</Button>
-            </div>
-          </Col>
-        </Row>
+        <FlowResponsive className={"responsive__app--button"} />
 
       </Container>
     </div>
