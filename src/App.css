@@ -306,7 +306,6 @@ margin-bottom: 30px;
 flex-grow: 1;
 border-radius: 0;
 text-align: center;
-background-color: var(--main-black-grey);
 height: 100vh;
 }
 .spinner__gif{
