@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+  Flow weather
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+###  Descripción
 
-## Available Scripts
+- Aplicación meteorológica que que muestra el clima de 5 ciudades de LATAM.
+- La aplicación proporciona la información meteorológica para los próximos 5 días de una ciudad seleccionada.
 
-In the project directory, you can run:
+###  TECNOLOGIA UTILIZADA:
 
-### `npm start`
+- HTML
+- CSS
+- JavaScript.
+- React js.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+###  Estructura:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Componentes: CardOfeta, Card, FlowResponsive, Image, ImageWeather, Navb, SeccionWeather y Spinner.
+- Img: Recursos multimedia(imagenes).
+- pages: Paginas de la app: weather y Home.
 
-### `npm test`
+###  Diseño detallado:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Se Construyó la aplicación utilizando componentes funcionales de react para manejar el estado, compartir datos mediantes props y otros métodos de ciclo de vida.
+- Para el sistema de rutas se utilizo la libreria "react-router-dom".
+- Para brindar mayor orden y compresion del proyecto, se utilizo la metodologia BEM para escribir los estilos  CSS de la app. 
+- Para lograr la app responsive se utilizo Bootstrap y media Query.
+- Mantuve el diseño de la aplicación simple para tener cualquier modificación o mejora en el futuro para evolucionar el diseño según sea necesario.
+- Para los icon de la app se utilizo react-icons por la variedad y tamaño de la libreria.
+- Para el consumo de la APi se utilizo Axios.
+- Para mejorar la carga de las images se utilizo "react-lazy-load-image-component".
 
-### `npm run build`
+###  Detalles de la API:
+Api para obtener el clima actual de una ciudad especifica.
+- https://api.openweathermap.org/data/2.5/forecast
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Api para obtener el clima de los 8 dias futuros de una ciudad especifica.
+- https://api.openweathermap.org/data/2.5/onecall
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+###  Enlace de la aplicación:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Enlace a la aplicación alojada en Vercel [ https://challenge-sable-xi.vercel.app/ ](https://challenge-sable-xi.vercel.app/)
 
-### `npm run eject`
+###  Cómo ejecutar la aplicación:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Clonar el repositorio y configurar la aplicación
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+# clonar el repositorio git
+clon de git https://github.com/obertogustavo10/challenge.git
+cd test-challege/
+npm install
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
